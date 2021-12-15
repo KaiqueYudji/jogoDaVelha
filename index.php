@@ -36,7 +36,7 @@
              continue;
          }
 
-         $boar[$position] = $player;
+         $board[$position] = $player;
 
 
          if(($board[0] === 'X' && $board[1] === 'X' && $board[2] === 'X') ||
@@ -61,16 +61,15 @@
                 $winner = 'O';
             }
 
-
             if(!in_array('.',$board)){
                 break;
             }
 
             if($player === 'X'){
-                $player === 'O';
+                $player = 'O';
             }
             else{
-                $player === 'X';
+                $player = 'X';
             }
      } 
 
