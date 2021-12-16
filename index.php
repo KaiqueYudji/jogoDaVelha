@@ -26,11 +26,13 @@
 
          $position = (int) readline("Player {$player}, escolha a sua posição: ");
 
+         //Se dentro da lista não tiver a posição que o player colocou irá executar este código
          if(!in_array($position,[0,1,2,3,4,5,6,7,8])){
              echo"\nPosição inexistente, digite novamente.\n";
              continue;
          }
 
+         //Se a posição que o player escolheu for diferente de '.' ou seja se alguém já escolheu essa posição, vamos executar este código.
          if($board[$position] !== '.'){
              echo"posição ocupada, digite novamente.\n";
              continue;
